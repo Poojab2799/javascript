@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue-Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+  <table border="1">
+      <tr>
+          <td height="25px">
+            <h1 class="appTitle">Issue Tracker  App -Using vanilla JS, HTML CSS</h1>
+          </td>
+      </tr>
+      <tr>
+          <td height="400px" valign="top">
+              <div class="container">
+                 
+                  <div>
+                      <input type="text" placeholder="enter issue" id="issueText">
+                      <button onclick="handlers.addIssue()">Add</button>
+                  </div>
+                  <br/>
+                  <div>
+                    <input type="number" placeholder="enter position" id="changeissuePositionInput">
+                    <input type="text" placeholder="enter issue" id="changeissueText">
+                    <button onclick="handlers.changeIssue()">change</button>
+                </div>
+                <br/>
+                <!-- <div>
+                    <input type="number" placeholder="enter position" id="deleteissueText">
+                    <button onclick="handlers.deleteIssue()">Delete</button>
+                </div>x -->
+                <br/>
+                <div>
+                    <input type="number" placeholder="enter position" id="toggleissueText">
+                    <button onclick="handlers.toggleComplete()">Toggle</button>
+                </div>
+
+                  <div id="sideInstruction" >
+                      <p>Hover on Isuue or [x] button to get the help</p>
+<p>click on issue or [x] button to change status or delete</p>
+                    </div>
+                    <br/>
+              </div>
+              <hr/>
+              <ul>
+         <!-- <li></li> -->
+              </ul>
+          </td>
+      </tr>
+      <tr>
+          <td height="20px">&copy; CODEGRAM | All rights reserved to codegram</td>
+      </tr>
+  </table>
+        
+  <script src="js/script.js" type="text/javascript">
+   </script>
+</body>
+</html>
